@@ -1,0 +1,69 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+
+<main class="page" style="height: 1000px">
+  <link rel="stylesheet" href="{% static 'css/image_upload.css' %}" />
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="container py-5">
+      <div>
+        <a href="/"><div class="btn btn-secondary">Cancel</div></a>
+        <input
+          class="btn btn-primary"
+          value="Search"
+          type="submit"
+          style="float: right"
+        />
+      </div>
+      <div class="row py-4">
+        <div class="col-lg-6 mx-auto">
+          <!-- Uploaded image area-->
+          <p class="text-white text-center" style="font-size:19px;">
+            Please upload your fabric photo to search sample clothes design.
+          </p>
+          <div class="image-area mt-4">
+            <img
+              id="imageResult"
+              src="#"
+              alt=""
+              class="img-fluid rounded shadow-sm mx-auto d-block"
+            />
+          </div>
+
+          <!-- Upload image input-->
+          <div
+            class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm"
+          >
+            <input
+              name="upload"
+              id="upload"
+              type="file"
+              onchange="readURL(this);"
+              class="form-control border-0"
+              accept="image/*"
+            />
+            <label
+              id="upload-label"
+              for="upload"
+              class="font-weight-light text-muted"
+              >Choose image</label
+            >
+            <div class="input-group-append">
+              <label for="upload" class="btn btn-light m-0 rounded-pill px-4">
+                <i class="fa fa-cloud-upload mr-2 text-muted"></i
+                ><small class="text-uppercase font-weight-bold text-muted"
+                  >Choose image</small
+                ></label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <script src="{% static 'js/image_upload.js' %}"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</main>
+{% endblock content %}

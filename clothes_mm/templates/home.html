@@ -1,0 +1,163 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+
+<main class="page lanidng-page" style="background: var(--bs-cyan)">
+  <section
+    class="portfolio-block block-intro"
+    style="
+      background: url('{% static 'assets/img/bg1.jpg' %}') repeat;
+      background-size: cover;
+    "
+  >
+    <div class="container">
+      <div
+        class="avatar"
+        style="
+          background: url('{% static 'assets/img/avatars/viber_image_2022-01-27_15-46-50-843.png' %}');
+          background-size: cover;
+          border-style: ridge;
+        "
+      ></div>
+
+      <div
+        class="about-me"
+        style="
+          text-align: center;
+          border-top-left-radius: 7px;
+          border-bottom-right-radius: 7px;
+          width: 220px;
+          height: 48px;
+          background: rgba(156, 249, 160, 0.74);
+          border: 2px dotted var(--bs-secondary);
+        "
+      >
+        <a href="/search">
+          <label
+            class="form-label"
+            style="
+              color: var(--bs-gray);
+              font-size: 24px;
+              text-align: center;
+              border-style: none;
+            "
+            >Find with me&nbsp;&nbsp;</label
+          ><i class="fa fa-camera"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="portfolio-block projects-cards photography">
+    <div class="container">
+      <div class="heading" style="margin-top: 50px; margin-bottom: 40px">
+        <h2>Myanmar clothes design</h2>
+      </div>
+      <div class="row">
+        <div class="col col-md-4 col-lg-3">
+          <div class="card border-0">
+            <a href="#"
+              ><img
+                class="card-img-top scale-on-hover"
+                src="{% static 'assets/img/nature/Batik%20Clothes%20Design.jpg' %}"
+                alt="Card Image"
+            /></a>
+            <div class="card-body">
+              <h6><a href="#">Amapura Design</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4 col-lg-3">
+          <div class="card border-0">
+            <a href="#"
+              ><img
+                class="card-img-top scale-on-hover"
+                src="{% static 'assets/img/nature/Amapura%202%20Color%20Design.jpg' %}"
+                alt="Card Image"
+            /></a>
+            <div class="card-body">
+              <h6><a href="#">Amapura Design</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4 col-lg-3">
+          <div class="card border-0">
+            <a href="#"
+              ><img
+                class="card-img-top scale-on-hover"
+                src="{% static 'assets/img/nature/SanMyan%20Clothes%20Design.jpg' %}"
+                alt="Card Image"
+            /></a>
+            <div class="card-body">
+              <h6><a href="#">Amapura Design</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4 col-lg-3">
+          <div class="card border-0">
+            <a href="#"
+              ><img
+                class="card-img-top scale-on-hover"
+                src="{% static 'assets/img/nature/Kachin%20Clothes%20Design.jpg' %}"
+                alt="Card Image"
+            /></a>
+            <div class="card-body">
+              <h6><a href="#">Amapura Design</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4 col-lg-3">
+          <div class="card border-0">
+            <a href="#"
+              ><img
+                class="card-img-top scale-on-hover"
+                src="{% static 'assets/img/nature/Sport%20Clothes%20design.jpg' %}"
+                alt="Card Image"
+            /></a>
+            <div class="card-body">
+              <h6><a href="#">Amapura Design</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4 col-lg-3">
+          <div class="card border-0">
+            <a href="#"
+              ><img
+                class="card-img-top scale-on-hover"
+                src="{% static 'assets/img/nature/Zar%20Clothes%20Design.jpg' %}"
+                alt="Card Image"
+            /></a>
+            <div class="card-body">
+              <h6><a href="#">Amapura Design</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4 col-lg-3">
+          <div class="card border-0">
+            <a href="#"
+              ><img
+                class="card-img-top scale-on-hover"
+                src="{% static 'assets/img/nature/Amapura%202%20Color%20Design.jpg' %}"
+                alt="Card Image"
+            /></a>
+            <div class="card-body">
+              <h6><a href="#">Amapura Design</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4 col-lg-3">
+          <div class="card border-0">
+            <a href="#"
+              ><img
+                class="card-img-top scale-on-hover"
+                src="{% static 'assets/img/nature/SanMyan%20Clothes%20Design.jpg' %}"
+                alt="Card Image"
+            /></a>
+            <div class="card-body">
+              <h6><a href="#">Amapura Design</a></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% endblock content %}
